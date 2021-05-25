@@ -1,9 +1,9 @@
+const contentHeight;
 if(!isMobile()) {
     contentHeight = 1244;
 } else {
     contentHeight = 600;
 }
-const contentHeight = 1244;
 let popUpShown = false;
 const popUp = document.getElementById("subscribe-popup");
 const otherContent = document.getElementById("everything-else");
