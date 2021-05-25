@@ -22,6 +22,10 @@
     padding: 10px 30px;
     border-radius: 10px;
 }
+#subscribe-popup p {
+    text-align: center;
+    width: 100%;
+}
 #subscribe-popup img {
     width: 100px;
     height: 100px;
