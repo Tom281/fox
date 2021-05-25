@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-around;
     position: sticky;
-    top: 40%;
+    top: 30%;
     z-index: 300;
     background-color: #EEE;
     border-radius: 20px;
@@ -22,11 +22,17 @@
     padding: 10px 30px;
     border-radius: 10px;
 }
-#subscribe-popup p {
+#subscribe-popup p, h1 {
     text-align: center;
     width: 100%;
 }
 #subscribe-popup img {
     width: 100px;
     height: 100px;
+}
+.video-container img {
+    width: 100%;
+}
+.pre-content {
+    height: 100px !important;
 }

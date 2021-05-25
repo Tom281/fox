@@ -1,3 +1,4 @@
+
 let contentHeight = 0;
 if(!isMobile()) {
     contentHeight = 1244;
@@ -11,6 +12,7 @@ let scrollY = window.scrollY;
 // Called periodically to check the page position and adapt the pop up if necesarry.
 setInterval(check, 50);
 function check() {
+    console.log()
     scrollY = window.scrollY;
     if(popUpShown && scrollY < contentHeight){
         togglePopup();
