@@ -1,3 +1,8 @@
+if(!isMobile()) {
+    contentHeight = 1244;
+} else {
+    contentHeight = 600;
+}
 const contentHeight = 1244;
 let popUpShown = false;
 const popUp = document.getElementById("subscribe-popup");
@@ -6,14 +11,12 @@ let scrollY = window.scrollY;
 // Called periodically to check the page position and adapt the pop up if necesarry.
 setInterval(check, 50);
 function check() {
-    console.log(isMobile());
-    /*console.log("Scroll: " + scrollY);
     scrollY = window.scrollY;
     if(popUpShown && scrollY < contentHeight){
         togglePopup();
     } else if(!popUpShown && scrollY >= contentHeight) {
         togglePopup();
-    }*/
+    }
 }
 function togglePopup() {
     if(popUpShown) {
