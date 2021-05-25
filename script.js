@@ -6,13 +6,14 @@ let scrollY = window.scrollY;
 // Called periodically to check the page position and adapt the pop up if necesarry.
 setInterval(check, 50);
 function check() {
-    console.log("Scroll: " + scrollY);
+    console.log(isMobile());
+    /*console.log("Scroll: " + scrollY);
     scrollY = window.scrollY;
     if(popUpShown && scrollY < contentHeight){
         togglePopup();
     } else if(!popUpShown && scrollY >= contentHeight) {
         togglePopup();
-    }
+    }*/
 }
 function togglePopup() {
     if(popUpShown) {
@@ -24,4 +25,7 @@ function togglePopup() {
         popUp.style.display = 'flex';
         otherContent.style.filter = 'blur(7px)'
     }
+}
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 }
