@@ -2,7 +2,7 @@ let contentHeight = 0;
 if(!isMobile()) {
     contentHeight = 1244;
 } else {
-    contentHeight = 600;
+    contentHeight = 400;
 }
 let popUpShown = false;
 const popUp = document.getElementById("subscribe-popup");
