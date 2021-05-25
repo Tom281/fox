@@ -1,4 +1,4 @@
-const contentHeight;
+const contentHeight = 0;
 if(!isMobile()) {
     contentHeight = 1244;
 } else {
